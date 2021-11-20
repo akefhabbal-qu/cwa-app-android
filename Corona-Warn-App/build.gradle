@@ -1,24 +1,11 @@
 
-
-plugins {
-    id 'info.solidsoft.pitest'
-}
-
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-parcelize'
 apply plugin: 'androidx.navigation.safeargs.kotlin'
 apply plugin: 'jacoco'
-apply plugin: 'info.solidsoft.pitest'
 
-pitest {
-    targetClasses = ['de.rki.coronawarnapp.*']
-    pitestVersion = "1.1.4"
-    threads = 4
-    outputFormats = ['XML', 'HTML']
-    excludedMethods = ['equals', 'hashCode']
-}
 
 
 def environmentExtractor = { File path ->
