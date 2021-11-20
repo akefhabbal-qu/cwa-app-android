@@ -21,6 +21,7 @@ protobuf {
             // The codegen for lite comes as a separate artifact
             artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
         }
+
     }
 
     generateProtoTasks {
